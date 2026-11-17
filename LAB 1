@@ -1,0 +1,174 @@
+##Arithmetic Operators
+
+#Q> Get two numbers from the user and perform addition.
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=a+b
+print("Q1 Ans",c)
+
+#Q> Find the difference between two numbers.
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=a-b
+print("Q2 Ans",c)
+
+#Q> Calculate the product of two numbers.
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=a*b
+print("Q3 Ans",c)
+
+#Q> Divide two numbers and display the quotient.
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=a//b
+print("Q4 Ans",c)
+
+#Q> Find the floor division of two numbers.
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=a//b
+print("Q5 Ans",c)
+
+#Q> Find the remainder of two numbers
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=a%b
+print("Q6 Ans",c)
+
+#Q> Find the square of a number using the power operator
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=a**b
+print("Q7 Ans",c)
+
+#Q> Calculate the total and average of 5 subject marks.
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=int(input("Enter c:"))
+d=int(input("Enter d:"))
+e=int(input("Enter e:"))
+f=a+b+c+d+e/5
+print("Q7 Ans",f)
+
+#Q> Find the last 2 digit of a number--121793
+a=int(input("Enter Number:"))
+b=a%100
+print("Q8 Ans",b)
+
+#Q> Remove the last 3 digit ----157390
+a=int(input("Enter Number:"))
+b=a//1000
+print("Q9 Ans",b)
+
+
+
+##Assignment Operators
+
+#Q> Assign your name to a variable and display it
+a="Hari Dayanand Rajesh Kumar"
+print("Q10 Ans",a)
+
+#Q> Assign 100 to a variable and add 50 using `+=`
+a=100
+a+=50
+print("Q11 Ans",a)
+a-=20
+print("Q12 Ans",a)
+a*=5
+print("Q13 Ans",a)
+a/=2
+print("Q14 Ans",a)
+a%=2
+print("Q15 Ans",a)
+a**=2
+print("Q16 Ans",a)
+
+##Comparison Operators
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+print("Q17 Ans",a==b)
+print("Q18 Ans",a!=b)
+print("Q19 Ans",a>b or a<b)
+print("Q20 Ans",a>18 and b>18)
+print("Q21 Ans",a>35 and b>35)
+print("Q22 Ans",a>1 and a<100)
+
+##Logical Operators
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+print("Q23 Ans:",a>-1 and a%2==0)
+print("Q24 Ans:",a>=18)
+print("Q25 Ans",a>35 and b>35)
+print("Q26 Ans",a>10 and a<50)
+print("Q27 Ans",not(a!=0))
+
+##Membership Operators
+a=["Hari","Python","@pple","1234","1"]
+print("Q28 Ans","a" in a)
+print("Q29 Ans","Python" in a)
+print("Q30 Ans","1" in a )
+print("Q31 Ans","#ashtag" not in a)
+
+##Identity Operators
+a=[1,2,3,4]
+b=[1,2,3,4]
+a=b
+print("Q32 Ans",a is b)
+print("Q33 Ans",a is b)
+print("Q34 Ans",a is b)
+print("Q35 Ans",a is not b)
+
+##Bitwise Operators
+a=10
+b=5
+print("Q36 Ans",a&b)
+print("Q37 Ans",a|b)
+print("Q38 Ans",a^b)
+print("Q39 Ans",~b)
+
+##Real Time Mini Tasks
+#Q> Student Result: Get name and 5 subject marks. Calculate total, average and pass/fail
+name=input("Enter Student Name")
+s1=int(input("Enter Mark1:"))
+s2=int(input("Enter Mark2:"))
+s3=int(input("Enter Mark3:"))
+s4=int(input("Enter Mark4:"))
+s5=int(input("Enter Mark5:"))
+avg=s1+s2+s3+s4+s5/5
+for i in avg():
+    if i>250:
+        print("Pass",i)
+    else:
+        print("Fail",i)
+
+#Q>Electricity Bill:Get units consumed and calculate the bill using a given per unit rate
+n=int(input("Enter the units consumed"))
+r=4
+print("Total electricity bill=",n*r)
+
+#Q> Shopping: Get product price and quantity. Calculate total amount and discount.
+price=int(input("Enter the price"))
+qty=int(input("Enter the quantity of the product"))
+print("Total Price:",qty*price)
+print("Total Discount:",qty*price/20*100)
+
+#Q> Voting Eligibility: Get age and check eligibility
+age=int(input("Enter Age"))
+c=age        
+print("Eligible to Vote",c>18)
+print("Not Eligible to Vote",c<18)
+#Q> Even or Odd: Check whether a number is even or odd using `%`.
+a=int(input("Enter Number"))
+b=a%2==0
+c=a%2!=0
+print("Number is Even",b)
+print("Number is Odd",c)
+
+#Q> Number Comparison: Get three numbers and find the largest
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=int(input("Enter c:"))
+greater=max(a,b,c)
+print("The Largest Number is",greater)
+
