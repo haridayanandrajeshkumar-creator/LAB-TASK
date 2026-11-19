@@ -1,0 +1,74 @@
+##Electricity Bill
+a=int(input("Enter the number:"))
+if a>0 and a<100:
+    print("Total Bill=",a*2)
+elif a>101 and a<200:
+    print("Total Bill=",a*3)
+elif a>200:
+    print("Total Bill=",a*5)
+
+##Largest of Three Numbers
+a=int(input("Enter a:"))
+b=int(input("Enter b:"))
+c=int(input("Enter c:"))
+if a>b:
+    print(a)
+elif b>a:
+    print(b)
+elif a>c:
+    print(a)
+elif c>b:
+    print(c)
+elif c>a:
+    print(c)
+elif b>c:
+    print(b)
+else:
+    print("All Are Equal")
+
+##Grade Calculator
+s1=int(input("Enter S1 Mark:"))
+s2=int(input("Enter S2 Mark:"))
+s3=int(input("Enter S3 Mark:"))
+s4=int(input("Enter S4 Mark:"))
+s5=int(input("Enter S5 Mark:"))
+avg=s1+s2+s3+s4+s5/5
+if avg>=90:
+    print("Grade A")
+elif avg>=80:
+    print("Grade B")
+elif avg>=70:
+    print("Grade C")
+elif avg>=60:
+    print("Grade D")
+elif avg<60:
+    print("Fail!")
+
+##Multiples with Conditions
+for i in range(1,100,1):
+    print(i)
+    if i%3==0 and i%5==0:
+        print("Python Java")
+    elif i%3==0:
+        print("Python")
+    elif i%5==0:
+        print("Java")
+    elif i%3!=0 and i%5!=0:
+        print(i)
+
+##Prime Numbers
+n=int(input("Enter a Number:"))
+for i in range(1,n):
+    if i%2==0:
+        print(i)
+    else:
+        print("No even Numbers found!")
+
+##Odd Numbers
+for i in range(1,51):
+    if i%2!=0:
+        print(i)
+    else:
+        print("No Odd Numbers found!")
+
+##Multiplication Table
