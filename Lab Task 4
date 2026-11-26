@@ -1,0 +1,256 @@
+##Pre Defined Functions
+#Q>
+string=("Deepak Is From Salem")
+print(len(string))
+
+#Q>
+n=[1,2,3,4,50,0,-1]
+print(max(n))
+
+#Q>
+n=[1,2,3,4,50,0,-1]
+print(min(n))
+
+#Q>
+n=[1,2,3,4,50,0,-1]
+print(sum(n))
+
+#Q>
+n=[10,0.2,30,400,500,0,-1]
+print(sorted(n))
+
+#Q>
+a="deepak is spiderman"
+print(a.upper)
+
+#Q>
+b="Lewis Hamilton is a Seven Time Champion Of The World"
+print(b.lower)
+
+#Q>
+l=[1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6]
+print(set(l))
+
+##User Defined
+#Q>
+def add(a,b):
+    print("ADD:"a+b)
+    return add
+add(4,6)
+
+#Q>
+def area(a,b):
+    print("Area:",a*b)
+    return area
+area(7,9)
+
+#Q>
+def evodd(a):
+    if a%2==0:
+        print("Even")
+    else:
+        print("Odd")
+    return evodd
+evodd(6)
+
+#Q>
+def maximum(a,b,c):
+    if a>b and a>c:
+        print("Greatest",a)
+    elif b>a and b>c:
+        print("Greatest",b)
+    elif c>a and c>b:
+        print("Greatest",c)
+maximum(4,40,0.5)
+
+#Q>
+def interest(p,r,t):
+    print("Simple Interest:",p*r*t/100)
+    return interest
+interest(1000000,4.3,5)
+
+#Q>
+def age(n):
+    if n>=18:
+        print("Eligible To Vote!")
+    else:
+        print("Not Eligible!!")
+age(22)
+
+#Q>
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+fact(4)
+
+#Q>
+def revstr():
+    return string[::-1]
+revstr()
+
+#Q>
+def palindrome(a):
+    b=0
+    t=0
+    while t.0:
+        d=t%10
+        b=b*10+d
+        t=t//10
+    print("b",b)
+    if b==a:
+        print("Palindrome")
+    else:
+        print("Not Palindrome")
+palindrome(131)
+
+##RECURSION
+#Q>
+def recursion(n):
+    if n==6:
+        return
+    print("Dheebuk")
+    name(n-1)
+    name(5)
+recursion(6)
+
+#Q>
+def num():
+    for i in range(0,11,1):
+        print(i)
+    return
+num()
+
+#Q>
+def num():
+    for i in range(10,0,-1):
+        print(i)
+    return
+num()
+
+#Q>
+def eve():
+    for i in range(2,21,1):
+        if i%2==0:
+            print(i)
+eve()
+
+#Q>
+def odd():
+    for i in range(1,21,1):
+        if i%2!=0:
+            print(i)
+odd()
+
+#Q>
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+fact(4)
+
+#Q>
+def expower(n):
+    print("Power;",n**3)
+expower(54)
+
+#Q>
+def sum(n):
+    if n==0:
+        return 0
+    else:
+        return n+sum(n-1)
+print(sum(5))
+
+#Q>
+def fibb(n):
+    if n==0:
+        return 1
+    else:
+        return n+fibb(n-1)
+print(fibb(10))
+
+##LAMBDA
+#Q>
+a=lambda x,y:x+y
+print(a(1,2))
+
+#Q>
+a=lambda x,y:x-y
+print(a(1,2))
+
+#Q>
+a=lambda x,y:x*y
+print(a(1,2))
+
+#Q>
+a=lambda x:x**2
+print(a(2))
+
+#Q>
+a=lambda x:x**3
+print(a(2))
+
+#Q>
+a=lambda x:"Even" if x%2==0 else "Odd"
+print(a(450))
+
+#Q>
+a=lambda x,y:max(x,y)
+print(a(43,0.43))
+
+#Q>
+a=lambda x,y:x*y
+print(a(43,34))
+
+#Q>
+a=lambda x,y,z:x*y*z/100
+print(a(10000000,4.4,2))
+
+#Q>
+a=lambda x:(x*9/5)+32
+print(a(45))
+
+##MAPPING
+#Q>
+a=[1,2,3,4,5,6,7,8,9]
+square=list(map(lambda x:x**2,a))
+print(square)
+
+#Q>
+a=[1,2,3,4,5,6,7,8,9]
+cube=list(map(lambda x:x**3,a))
+print(cube)
+
+#Q>
+a=[1,2,3,4,5,6,7,8,9]
+mult=list(map(lambda x:x*5,a))
+print(mult)
+
+#Q>
+a=[1,2,3,4,5,6,7,8,9]
+add=list(map(lambda x:x+10,a))
+print(add)
+
+#Q>
+a=["Lewis","Max","Fernando"]
+lett=list(map(lambda x:x.upper,a))
+print(lett)
+
+#Q>
+a=[32,33,34,35,36,37,38,39,40]
+celfar=list(map(lambda x:(x*9/5)+32,a))
+print(celfar)
+
+#Q>
+a=["Lewis","Max","Fernando"]
+lett=list(map(lambda x:len(x),a))
+print(lett)
+
+#Q>
+l1= [1, 2, 3]
+l2= [4, 5, 6]
+result = list(map(lambda a,b:a+b,l1,l2))
+print(result)
